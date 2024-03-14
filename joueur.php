@@ -233,6 +233,14 @@ ob_end_flush();
             <li><a href="index.php" onclick="return(confirm('Vous vous déconnectez ?'));"><button type="submit" class="disconnect">Déconnexion</button></a></li>
         </ul>
     </div>
+    <div class="profil">
+        <a href="joueur.php">
+            <span class="profil">
+                <img src="image/pjoueur.png" alt="">
+                <p><?php echo $_SESSION['Email']; ?> <br>en ligne <input type="radio" name="online" id="online" style="background-color: green;"></p>
+            </span>
+        </a>
+    </div>
     <div class="div">
         <div class="large">
             <div class="search-bar">
